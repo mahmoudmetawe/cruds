@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+.head{
+    text-align: center;
+    margin: 10px 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+input{
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px;
+    transition: 0.4s;
+}
+input:focus{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.03);
+}
+.totallist input{
+    width: 20%;
+}
+small{
+    background-color: red;
+    color: white;
+    padding: 6px;
+}
+small::before{
+    content: 'total:';
+    font-size: large;
+}
+#creat{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 5px 0;
+}
+#creat:hover{
+    background-color: brown;
+    letter-spacing: 5px;
+    transform: scale(1.03);
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.btnsearch button{
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btnsearch button:hover{
+    background-color: brown;
+    letter-spacing: 2px;
+    transform: scale(1.03);
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+table button{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 80%;
+    padding: 3px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+table button:hover{
+    background-color: brown;
+    letter-spacing: 0.5px;
+    transform: scale(1.03);
+}
+table th{
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    height: 30px;
+}
