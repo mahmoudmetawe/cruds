@@ -35,12 +35,13 @@ small{
     background-color: red;
     color: white;
     padding: 6px;
+    margin-left: 20px ;
 }
 small::before{
-    content: 'total:';
+    content: 'total :   ';
     font-size: large;
 }
-#creat{
+#creat , .Dall{
     width: 100%;
     height: 40px;
     outline: none;
@@ -52,7 +53,7 @@ small::before{
     transition: 0.5s;
     margin: 5px 0;
 }
-#creat:hover{
+.Dall:hover,#creat:hover{
     background-color: brown;
     letter-spacing: 5px;
     transform: scale(1.03);
