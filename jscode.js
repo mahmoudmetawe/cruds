@@ -42,7 +42,14 @@ creat.onclick = function(){
         count : count.value,
         category : category.value,
     }
-    datapro.push(newData);
+    if(newData.count > 1){
+        for( let i = 0 ; i <newData.count ; i++ ){
+            datapro.push(newData);
+        }
+    }else{
+        datapro.push(newData);
+    }
+    
     localStorage.setItem('creatpro' , JSON.stringify(datapro));
     cleardata();
     showdata()
@@ -84,7 +91,7 @@ document.getElementById('tbody').innerHTML = table;
 let deleteall = document.getElementById("deleteall")
 if(datapro.length>0){
     deleteall.innerHTML = `
-    <button onclick = "deleteAll()" class = "Dall">Delete All</button>
+    <button onclick = "deleteAll()" class = "Dall">Delete All (${datapro.length})</button>
     `
 }else{
     deleteall.innerHTML  = '';

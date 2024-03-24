@@ -50,12 +50,12 @@ small::before{
     background-color: black;
     color: white;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.7s;
     margin: 5px 0;
 }
 .Dall:hover,#creat:hover{
     background-color: brown;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     transform: scale(1.03);
 }
 .btnsearch{
